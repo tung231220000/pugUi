@@ -1,0 +1,61 @@
+.container-form{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.form-login{
+    width: 60vh;
+    height: 60vh;
+    background-color: #f3eded;
+    margin: auto;
+    text-align: center;
+    border-radius: 13px;
+    padding: 5vh 0;
+
+
+    form{
+        width: 50vh;
+        height: 60vh;
+        margin: auto;
+        text-align: left;
+
+        p{
+            color: rgb(29 78 216);
+            font-size: 500;
+            font-size: 25px;
+        }
+        
+        label{
+            display: block;
+            padding: 20px 0;
+            font-weight: 700;
+        }
+
+        input{
+            width: 100%;
+            height: 5.5vh;
+            border-radius: 8px;
+            padding: 0 8px;
+            border: 1px solid gray ;
+            
+        }
+        
+        .filed-password{
+            input{
+                margin-bottom: 8vh;
+            }
+        }
+        
+        .submit{
+            width: 100%;
+            height: 5.5vh;
+        }
+    }
+}
+
+

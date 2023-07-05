@@ -1,0 +1,40 @@
+.members {
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
+        max-width: 1280px;
+        margin-inline: auto;
+        padding :20px;
+    }
+
+    
+}
+.member-item{
+  background-color: white;
+  border:  2px solid #DEE0E8;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 40px 40px 20px;     
+  
+  .member-image{
+    aspect-ratio: 1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+  }
+  .member-name{
+    padding: 4px;
+    font-weight: 800;
+  }
+  .member-meta{
+    display: flex;
+    justify-content: space-between;
+    .member-job{
+        margin-left: 4px ;
+    }
+  } 
+}

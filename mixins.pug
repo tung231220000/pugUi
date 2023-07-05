@@ -1,0 +1,8 @@
+mixin memberItem(image, name, job ,price)
+    .member-item
+        .member-image 
+            img(src= image , alt= name)
+        h3.member-name= name
+        .member-meta 
+            span.member-job= job
+            span.member-price= price
