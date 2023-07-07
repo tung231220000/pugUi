@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 1280px;
     height: 10vh;
     display: flex;
@@ -7,52 +7,94 @@
     align-items: center;
     border-bottom: 1px solid black;
 }
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Lobster', cursive;
+    font-family: "Lobster", cursive;
     font-size: larger;
-    
 }
-.logo>img{
+.logo > img {
     width: 40px;
     height: 40px;
     border-radius: 46%;
     padding: 4px;
 }
 
-.service{
+.service {
     display: flex;
-    font-family: 'Anton', sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 20px;
-
 }
-.service>a{
+.service > a {
     text-decoration: none;
     color: black;
     padding: 20px;
     font-weight: 100;
 }
 
-.product>ul{
+.product {
+    position: relative;
+}
+
+.product > ul {
     display: none;
+    // display: block;
+    // position: absolute;
+    // top: 40px;
+    // width: 150px;
+    // height: 90px;
+    // background-color: black;
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    li:hover{
+        color: red;
+        
+    }
+    
 }
-.author{
-    font-family: 'Roboto', sans-serif;
+
+.product:hover {
+    ul {
+        display: block;
+        position: absolute;
+        top: 48px;
+        width: 150px;
+        height: 25vh;
+        opacity: 1;
+        z-index: 1;
+        right: -22px;
+        background-color: rgb(243, 236, 236); 
+        opacity: 0.9;
+        border-radius: 18px;
+    }
+    ul::before{
+        position: absolute;
+        content: "";
+        top: -10px;
+        left: 60px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgb(243, 236, 236);
+    }
 }
-.button{
+.author {
+    font-family: "Roboto", sans-serif;
+}
+.button {
     width: 11vh;
     height: 5vh;
     background-color: rgb(29 78 216);
     border-radius: 6px;
     color: aliceblue;
 }
-.button:hover{
+.button:hover {
     background-color: rgb(30 64 175);
 }
-a{
+a {
     text-decoration: none;
-    color:white;
+    color: white;
 }

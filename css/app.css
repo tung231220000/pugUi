@@ -78,8 +78,42 @@ body {
   font-weight: 100;
 }
 
+.product {
+  position: relative;
+}
+
 .product > ul {
   display: none;
+}
+.product > ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.product > ul li:hover {
+  color: red;
+}
+
+.product:hover ul {
+  display: block;
+  position: absolute;
+  top: 48px;
+  width: 150px;
+  height: 25vh;
+  opacity: 1;
+  z-index: 1;
+  right: -22px;
+  background-color: rgb(243, 236, 236);
+  opacity: 0.9;
+  border-radius: 18px;
+}
+.product:hover ul::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 60px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(243, 236, 236);
 }
 
 .author {
@@ -192,11 +226,20 @@ a {
 
 .banner {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
+  padding-bottom: 7vh;
+}
+.banner div {
+  height: 100%;
 }
 .banner img {
   width: 100%;
   height: 100%;
+}
+
+.slick-prev,
+.slick-next {
+  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */
